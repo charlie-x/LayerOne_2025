@@ -1,0 +1,15 @@
+# sensor test script
+adc init 0
+adc init 1
+adc temp_init
+
+loop 10
+    adc 0 -> pot
+    adc 1 -> light
+    adc temp -> temp_raw
+    
+    print "Pot: " pot " Light: " light " Temp: " temp_raw
+    sleep 500ms
+endloop
+
+print "Sensor test complete"

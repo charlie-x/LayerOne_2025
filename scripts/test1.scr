@@ -1,0 +1,10 @@
+# Set up pins
+pin 19 out
+
+loop 10    
+    pin 19 high
+    print "Button pressed, LED on"
+    pin 19 high
+    print "Button released, LED off"
+    sleep 10ms
+endloop

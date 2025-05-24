@@ -1,0 +1,7 @@
+# startup script - runs on boot
+print "System starting up..."
+pin 25 out
+pin 25 high
+sleep 100ms
+pin 25 low
+print "Startup complete"

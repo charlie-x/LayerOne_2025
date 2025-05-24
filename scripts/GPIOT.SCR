@@ -1,0 +1,17 @@
+# gpio test script
+print "Testing GPIO pins hello..."
+
+# test output pins
+pin 19 out
+pin 25 out
+
+loop 5
+    pin 19 high
+    pin 25 low
+    sleep 100ms
+    pin 19 low  
+    pin 25 high
+    sleep 100ms
+endloop
+
+print "GPIO test complete"
