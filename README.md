@@ -2,6 +2,49 @@
 
 ai generated docs...
 
+
+diag scripts will find
+
+
+Serial Ports for CMSIS-DAP
+==========================
+
+Found serial ports:
+crw-rw-rw-  1 root  wheel  0x9000003 May 25 08:40 /dev/cu.usbmodem1202
+
+first serial port is the CDC
+crw-rw-rw-  1 root  wheel  0x9000005 May 25 08:40 /dev/cu.usbmodem14301
+
+is for hook up to the fpga etc
+crw-rw-rw-  1 root  wheel  0x9000009 May 25 08:40 /dev/cu.usbmodem14303
+
+adc streaming , two adc's interlevaed see the adc python script
+
+crw-rw-rw-  1 root  wheel  0x9000007 May 25 08:40 /dev/cu.usbmodem14305
+
+
+the adc streaming is seperate and always runs
+
+// run it
+python adc_stream_reader.py /dev/cu.usbmodem14305
+
+// pack ADC values into buffer
+#define HEADER_BYTE 0xAA
+#define PACKET_SIZE 5
+
+void pack_adc_values(uint16_t _adc0, uint16_t _adc1, uint8_t seq, uint8_t* buffer) {
+    buffer[0] = HEADER_BYTE;                      // header byte for synchronization
+    buffer[1] = seq;                              // sequence number
+    buffer[2] = _adc0 & 0xFF;                      // low 8 bits of adc0
+    buffer[3] = ((_adc0 >> 8) & 0x0F) |            // high 4 bits of adc0
+                ((_adc1 & 0x0F) << 4);             // low 4 bits of adc1
+    buffer[4] = (_adc1 >> 4) & 0xFF;               // high 8 bits of adc1
+}
+
+<img width="1203" alt="image" src="https://github.com/user-attachments/assets/87d81ba6-0b7e-4d30-98ad-a1d6741d11d0" />
+
+
+
 ## Overview
 
 The LayerOne 2025 GLiTCh BadgE is a versatile hardware hacking platform designed for security researchers, hardware enthusiasts, and anyone interested in exploring digital electronics. It combines a powerful RP2040 microcontroller with specialized hardware for glitching, debugging, and interfacing with other devices.
