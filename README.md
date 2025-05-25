@@ -1,6 +1,8 @@
 # LayerOne 2025 GLiTCh BadgE
 
 
+FYI these docs are mostly A.I. generated they may aor may not exist. Use the onboard help system
+
 ## Overview
 
 The LayerOne 2025 GLiTCh BadgE is a versatile hardware hacking platform designed for security researchers, hardware enthusiasts, and anyone interested in exploring digital electronics. It combines a powerful RP2040 microcontroller with specialized hardware for glitching, debugging, and interfacing with other devices.
