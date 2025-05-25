@@ -2,6 +2,34 @@
 
 ai generated docs...
 
+https://a360.co/4dxIxcs
+terminal is CR, so do cr/lf conversion.
+
+for 3v3 control the pads need to be soldered on the pcb,
+
+
+
+switch_pwr  
+short 1-2
+![image](https://github.com/user-attachments/assets/cf1b73e3-9c54-4e85-a0a2-8153f8ca2d10)
+
+glitch_ctrl
+solder all three
+short 1-2-3
+![image](https://github.com/user-attachments/assets/7def6045-e0bb-45a3-b9a5-88939d821888)
+
+3cv3_ctrl
+short 1-2-3
+![image](https://github.com/user-attachments/assets/88a24b83-067c-499f-8c80-73a1713b94d6)
+
+
+fet
+short 1-2-3
+![image](https://github.com/user-attachments/assets/4419e85d-f257-4988-bc79-ecb437aeeb05)
+
+
+https://a360.co/4dxIxcs
+
 
 diag scripts will find
 
