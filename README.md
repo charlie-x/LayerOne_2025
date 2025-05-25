@@ -1,7 +1,6 @@
 # LayerOne 2025 GLiTCh BadgE
 
-
-FYI these docs are mostly A.I. generated they may aor may not exist. Use the onboard help system
+ai generated docs...
 
 ## Overview
 
