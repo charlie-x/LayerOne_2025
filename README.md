@@ -2,6 +2,10 @@
 
 later on there are ai generated docs...
 
+altium link.. there is an eror on one of the leds on the charlieplex'd leds...
+also the 3 pin JST SWD is reversed
+.
+https://365.altium.com/files/01BF9671-6FB8-4A9E-9FD1-49A52BA8D165
 
 first flash drive appears as RPI-RP2 copy the uf2 file to it, after that use the system command to reboot to the dfu or hold the RP-BOOT button during power on or a reset cycle
 
