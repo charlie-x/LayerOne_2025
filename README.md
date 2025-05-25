@@ -31,6 +31,8 @@ short 1-2-3
 https://a360.co/4dxIxcs
 
 
+thea re two pots vr1, vr2 , vr1 changes run votlage of vtg, vr2 controls the low voltage
+
 diag scripts will find
 
 
