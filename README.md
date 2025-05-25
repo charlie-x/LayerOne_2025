@@ -2,6 +2,9 @@
 
 ai generated docs...
 
+
+first flash drive appears as RPI-RP2 copy the uf2 file to it, after that use the system command to reboot to the dfu or hold the RP-BOOT button during power on or a reset cycle
+
 https://a360.co/4dxIxcs
 terminal is CR, so do cr/lf conversion.
 
