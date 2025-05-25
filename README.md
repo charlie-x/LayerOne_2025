@@ -29,19 +29,21 @@ the adc streaming is seperate and always runs
 python adc_stream_reader.py /dev/cu.usbmodem14305
 
 // pack ADC values into buffer
-#define HEADER_BYTE 0xAA
-#define PACKET_SIZE 5
+ - #define HEADER_BYTE 0xAA
+ - #define PACKET_SIZE 5
+ - 
+ - void pack_adc_values(uint16_t _adc0, uint16_t _adc1, uint8_t seq, uint8_t* buffer) {
+ -    buffer[0] = HEADER_BYTE;                      // header byte for synchronization
+ -    buffer[1] = seq;                              // sequence number
+ -     buffer[2] = _adc0 & 0xFF;                      // low 8 bits of adc0
+ -     buffer[3] = ((_adc0 >> 8) & 0x0F) |            // high 4 bits of adc0
+ -                 ((_adc1 & 0x0F) << 4);             // low 4 bits of adc1
+ -     buffer[4] = (_adc1 >> 4) & 0xFF;               // high 8 bits of adc1
+ - }
 
-void pack_adc_values(uint16_t _adc0, uint16_t _adc1, uint8_t seq, uint8_t* buffer) {
-    buffer[0] = HEADER_BYTE;                      // header byte for synchronization
-    buffer[1] = seq;                              // sequence number
-    buffer[2] = _adc0 & 0xFF;                      // low 8 bits of adc0
-    buffer[3] = ((_adc0 >> 8) & 0x0F) |            // high 4 bits of adc0
-                ((_adc1 & 0x0F) << 4);             // low 4 bits of adc1
-    buffer[4] = (_adc1 >> 4) & 0xFF;               // high 8 bits of adc1
-}
 
 <img width="1203" alt="image" src="https://github.com/user-attachments/assets/87d81ba6-0b7e-4d30-98ad-a1d6741d11d0" />
+
 
 
 
