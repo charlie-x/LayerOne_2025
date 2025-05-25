@@ -1,6 +1,6 @@
 # LayerOne 2025 GLiTCh BadgE
 
-ai generated docs...
+later on there are ai generated docs...
 
 
 first flash drive appears as RPI-RP2 copy the uf2 file to it, after that use the system command to reboot to the dfu or hold the RP-BOOT button during power on or a reset cycle
@@ -77,6 +77,27 @@ python adc_stream_reader.py /dev/cu.usbmodem14305
 
 <img width="1203" alt="image" src="https://github.com/user-attachments/assets/87d81ba6-0b7e-4d30-98ad-a1d6741d11d0" />
 
+
+
+
+tats for LayerOne2025 codebase:
+
+  Files by type:
+  - C (.c): 57 files
+  - Headers (.h): 48 files
+  - Python (.py): 25 files
+  - Markdown (.md): 17 files
+  - Shell scripts (.sh): 8 files
+
+  Code metrics:
+  - Total lines of code: ~30,383 lines
+  - Total commits: 82
+  - Contributors: 2 (charliex: 82)
+
+  Top directories:
+  - Root directory (372 files)
+  - cli/ (42 files)
+  - docs/ (12 files)
 
 
 
