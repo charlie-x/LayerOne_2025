@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVRSim", "AVRSim\AVRSim.vcproj", "{BF952867-84A8-4F9F-AC11-0C4A03C1CF72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF952867-84A8-4F9F-AC11-0C4A03C1CF72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF952867-84A8-4F9F-AC11-0C4A03C1CF72}.Debug|Win32.Build.0 = Debug|Win32
+		{BF952867-84A8-4F9F-AC11-0C4A03C1CF72}.Release|Win32.ActiveCfg = Release|Win32
+		{BF952867-84A8-4F9F-AC11-0C4A03C1CF72}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

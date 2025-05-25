@@ -1,0 +1,31 @@
+=== AVRsimu ===
+
+AVRsimu is simulator for Atmel AVR microcontrollers. 
+It has a command line interface, graphical interfaces may follow. 
+AVRsimu tries to stay small and portable.
+
+For more Information, see http://sourceforge.net/projects/avrsimu/
+
+=== Usage ===
+
+usage: /home/jonas/workspace/AVRsimu/src/avrsimu <hexfilename>
+
+Type <?> once AVRsimu started for further help.
+
+== Compilation ==
+
+AVRsimu only requires make and a c compiler (e.g. gcc) do build.
+ To compile, simply type "make" in the top directory.
+
+== Changelog ==
+
+This only summarizes changes between releases.
+See the ChangeLog file (created with cvs2cl -t) for more details.
+
+0.1.4 Some major Bugfixes and Changes
+- Critical Bugs fixed
+- New Instructions
+- Output beautification
+- Preparations to support additional MCU variants
+
+0.1.3 First official Release

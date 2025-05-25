@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\labels.tmp" -fI -W+ie -C V2 -o "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\cylonII.hex" -d "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\cylonII.obj" -e "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\cylonII.eep" -m "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\cylonII.map" "D:\Program Files (x86)\EAGLE-5.6.0\projects\NSL_CylonII\cylonII.asm"
