@@ -150,7 +150,7 @@ Comprehensive documentation is available in the [docs](docs/) directory:
 
 1. Clone this repository:
    ```
-   git clone [git@github.com:charlie-x/LayerOne_2025.git](https://github.com/charlie-x/LayerOne_2025)
+   git clone git@github.com:charlie-x/LayerOne_2025.git
    cd LayerOne_2025
    ```
 
