@@ -150,13 +150,14 @@ Comprehensive documentation is available in the [docs](docs/) directory:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/nullspacelabs/layerOne2025.git
-   cd layerOne2025
+   git clone [https://github.com/nullspacelabs/layerOne2025.git](https://github.com/charlie-x/LayerOne_2025)
+   cd LayerOne_2025
    ```
 
 2. Connect your badge to your computer using a USB-C cable
-
-3. Run the CLI terminal:
+   Either use the RP-BOOT switch to put the badge into RPI-RP2 mode while its in reset, or switch on. or if its already flashed you can use system dfu command on the badge itself, copy the bin/layerOne2025.uf2 file to the RPI-RP2 folder, use -X if you use cp in Mac OS
+  
+4. Run the CLI terminal:
    ```
    python3 cli_terminal.py
    ```
