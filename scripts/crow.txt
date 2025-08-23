@@ -1,0 +1,12 @@
+# crowbar test script
+print "Testing crowbar..."
+
+# test output pins
+crowbar duration 400000
+crowbar delay 1000
+
+loop 5
+    crowbar trigger
+endloop
+
+print "crowbar test complete"

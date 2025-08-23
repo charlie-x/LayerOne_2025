@@ -1,0 +1,11 @@
+# glitch test script
+print "Testing glitch..."
+
+glitch duration 400000
+glitch delay 1000
+
+loop 5
+    glitch trigger
+endloop
+
+print "glitch test complete"
