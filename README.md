@@ -191,6 +191,15 @@ usb mode dap        # Switch to DAP mode
 usb mode dfu        # Switch to DFU mode
 ```
 
+## Logic Analyser mode
+
+use command 
+
+adc_stream la
+
+
+<img width="1570" height="1306" alt="image" src="https://github.com/user-attachments/assets/8252e059-2852-4418-89c5-e1b98bc19e27" />
+
 ## Development
 
 ### Building the Firmware
