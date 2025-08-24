@@ -121,7 +121,8 @@ The LayerOne 2025 GLiTCh BadgE is a versatile hardware hacking platform designed
 - **AVRISP** - For programming AVR microcontrollers
 - **Analog Monitoring** - For capturing and analyzing signals
 - **Multiple USB Modes** - Normal, DAP, and DFU modes for different use cases
-
+- **Basic Logic Analyser** - Simple 12 bit LA at about 10khz
+  
 ## Documentation
 
 Comprehensive documentation is available in the [docs](docs/) directory:
